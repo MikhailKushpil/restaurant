@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: indigo;
+    display: flex;
+    font-family: arial;
+}
+body {
+    background-color:#000;
+}
+h3{
+    font: 24px/34px bold comic;
+    padding: 20px;
+}
+
+.logo{
+    box-shadow: 0px 0px 25px rgb(255, 255, 255);
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    width: 50%;
+    height: 195px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+    margin: auto;
+    z-index: 100;
+    border-radius: 100%;
+}
+.logo img{
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    border-radius: 50px;
+    top: 23%;
+    left:5%;
+    float: none;
+    clear: right;
+
+}
+.logo h2{
+    display: block;
+    position: absolute;
+    color: rgb(84, 222, 0);
+    font-size: 2.5vw;
+    font-weight: 900;
+    font-family: italic;
+    top: 23%;
+    left:33%;
+}
+.logo h3{
+    display: block;
+    position: absolute;
+    color: rgb(84, 222, 0);
+    font-size: 1.25vw;
+    font-weight: 400;
+    font-family: italic;
+    top: 35%;
+    left:32%;
+}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Style each tab content individually */
+#Breakfast {background-color:red;}
+#Lunch {background-color:green;}
+#Main_Courses {background-color:blue;}
+#Dessert {background-color:orange;}
+#Drinks{background-color: black;}
+
+
+.border {
+list-style: none;
+padding: 0;
+}
+.border li {
+font-family: "Trebuchet MS", "Lucida Sans";
+padding: 7px 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-left: 10px solid #f05d22;
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 20px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+text-align: left;
+}
+
+.border li:nth-child(3){border-color: #8bc63e;}
+.border li:nth-child(5){border-color: #fcba30;}
+.border li:nth-child(7){border-color: #1ccfc9;}
+.border li:nth-child(9){border-color: #493224;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {
+    border-right: 50px solid #f05d22;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.border li:nth-child(3):hover {
+    border-right: 50px solid #fcba30;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.border li:nth-child(5):hover {
+    border-right: 50px solid #f05d22;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.border li:nth-child(7):hover {
+    border-right: 50px solid #1ccfc9;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.border li:nth-child(9):hover {
+    border-right: 50px solid #493224;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.border li span {
+    display: inline;
+    float: right;
+}
+.foodFoto {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+    display: none;
+    box-shadow: 15px 15px 25px rgba(0,0,0, 0.5);
+
+}
+
+/*                             */
+.border li:nth-child(1):hover ~ .foodFoto_1{
+    display: block;
+    transition: 1s;
+}
+.border li:nth-child(3):hover ~ .foodFoto_2{
+    display: block;
+}
+.border li:nth-child(5):hover ~ .foodFoto_3{
+    display: block;
+}
+.border li:nth-child(7):hover ~ .foodFoto_4{
+    display: block;
+}
+.border li:nth-child(9):hover ~ .foodFoto_5{
+    display: block;
+}
+img.foodFoto_1{
+    transition: 2s;
+}
+/**/
+.slider{
+    width: 100%;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+img{
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 450px;
+}
+
+.img{
+    text-align: center;
+    /*line-height: 300px;*/
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    display: none;
+}
+.img.curry{
+    display: block;
+}
+.img:first-child{
+    width:100%;
+}
+.img:nth-child(2){
+    width:100%;
+}
+.img:nth-child(3){
+    width:100%;
+}
+.img:nth-child(4){
+    width:100%;
+}
+.img:nth-child(5){
+    width:100%;
+}
+.n{
+    color:#575757;
+}
+a{
+    text-decoration: none;
+    color: #FD7EAD;
+    font-size: 45px;
+    font-weight: 900;
+}
+a:hover{
+    color:#0AB6DD;
+}
+.prev{
+    position: absolute;
+    top:200px;
+    left: 5%;
+    z-index: 2;
+}
+.next{
+    position: absolute;
+    top: 200px;
+    right: 5%;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+}
+.footer p{
+    text-align: center;
+    height: 300px;
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 100px;
+    color: #fff;
+    font-family: fantasy;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
