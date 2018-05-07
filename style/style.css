@@ -154,16 +154,17 @@ text-align: left;
     display: inline;
     float: right;
 }
-.foodFoto {
+.foodPhoto {
     width: 400px;
     height: 300px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20%;
-    display: none;
     box-shadow: 15px 15px 25px rgba(0,0,0, 0.5);
-
+}
+.showImg{
+    display: none;
 }
 
 /*                             */
